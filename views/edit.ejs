@@ -1,0 +1,31 @@
+
+    <div class="form-edit">
+        <form action="/edit" method="post">
+            <fieldset>
+                <legend>Form edit new Users</legend>
+            
+                <div style="display:none" class="input-group">
+                    <label for="email">Id  </label>
+                    <input type="text" name="userId"  value = "<%=user._id%>"/>
+    
+            </div>
+            <div class="input-group">
+                    <label for="email">Email  </label>
+                    <input type="text" name="email" id ="email" value = "<%=user.email%>"/>
+    
+            </div>
+            <div class="input-group">
+                <label for="name">Name  </label>
+                    <input type="text" id="name" name="name" value = "<%=user.name%>"/>
+            </div>
+            <div class="input-group">
+                <label for="city"> City  </label>
+                <input type="text" name="city" id="city" value = "<%=user.city%>"/>
+            </div>
+           <div class="btnContainer">
+            <button class="btnSubmit">Save</button>
+           
+           </div>
+        </form>
+
+    </div>

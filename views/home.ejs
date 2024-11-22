@@ -1,0 +1,41 @@
+
+    <div class="title">List Users</div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Action</th>
+              </tr>
+        <% let Users =  Array.from(data)%>
+        <% let arrayLength =  Users.length%>
+       
+        <% Users.forEach((user, index) => { %>
+            <tr>
+                <td>
+                    <%= user.id %>
+                </td>
+                <td>
+                    <%= user.email %>
+                </td>
+                <td>
+                    <%= user.name %>
+                </td>
+                <td>
+                    <%= user.city %>
+                </td>
+                <td>
+                    <a href="/edit/<%= user.id %>">Edit</a>
+        
+                    <form action="/delete/<%= user.id %>" method="POST" style="display: inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        <% }) %>
+        
+        </table>
+
+        

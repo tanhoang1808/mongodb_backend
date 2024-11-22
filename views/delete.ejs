@@ -1,0 +1,27 @@
+
+    <div class="form-delete">
+        <form action="/delete" method="post">
+            <fieldset>
+                <legend>Form Confirm Users</legend>
+                <div style = "display: none;"class="input-group">
+                    <label for="id">Id  </label>
+                    <input type="text" name="userId" id ="id" value="<%=user._id%>"/>
+    
+            </div>
+                <div class="input-group">
+                    <label for="name">Name  </label>
+                    <input type="text" name="name" id ="name" value="<%=user.name%>"/>
+    
+            </div>
+            <div class="input-group">
+                    <label for="email">Email  </label>
+                    <input type="text" name="email" id ="email" value="<%=user.email%>"/>
+    
+            </div>
+           <div class="btnContainer">
+            <button class="btnSubmit">Confirm Delete</button>
+           
+           </div>
+        </form>
+
+    </div>

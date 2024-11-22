@@ -1,0 +1,111 @@
+
+body {
+    margin : 0
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color: #04AA6D;
+  }
+  ul {
+    background-color: #dddddd;
+  }
+
+
+/* Form css
+*/
+
+.form-add-new {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%; /* Đảm bảo các thẻ input chiếm toàn bộ chiều rộng container cha */
+    padding: 8px; /* Tạo khoảng trống bên trong input */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng input */
+    margin-top:5px
+}
+.btnSubmit {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  
+  
+
+}
+.btnContainer
+{
+    
+}
+
+.btnSubmit:hover {opacity: 1}
+
+
+
+.title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.table-container {
+    padding : 15px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {background-color: coral;}
+
+
+ 
+  
